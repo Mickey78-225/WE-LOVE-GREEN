@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIENS CSS GENERAL -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>COMPOSANTS</title>
+</head>
+<body>
+
+    .
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Festival</a>
+                </li>
+                <li>
+                    <a href="#">Billeterie</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="https://placehold.co/60" alt="Image du logo">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Programmation</a>
+                </li>
+                <li>
+                    <a href="#">Affiche</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PARALLAX IMG -->
+        <section class="parallax">
+            <h2>EFFET DE PARALLAX</h2>
+        </section>
+    </main>
+    <footer style="height: 100vh;">
+        <h3></h3> 
+    </footer>
+
+
+    <script src="/JS/script.js"></script>
+</body>
+</html>
+
+<style>
+    /* STYLE PROPRE A CETTE PAGE */
+    header{
+        height: 100vh;
+    }
+    nav{
+        background-image: linear-gradient(to right, #000, #545454);
+    }
+    main{
+        background-color: #222;
+    }
+
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        font: bold 32px LAILA;
+        
+
+        /* Pour faire l'effet parallax */
+        background-image: url("https://images.pexels.com/photos/21927592/pexels-photo-21927592/free-photo-of-gens-personnes-individus-monument.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    footer{
+        background-color: #d4d4d4;
+    }
+</style>
