@@ -1,0 +1,3 @@
+git add .
+git commit -m "Version 00.00 Ajout de: ..."
+git push

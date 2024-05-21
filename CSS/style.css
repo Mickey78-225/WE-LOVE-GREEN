@@ -9,16 +9,16 @@
     --violet: #9a8ec7;
 
     /*====    POLICES    ====*/
-    --titre: RUBIK;
-    --sous-titre: LAILA;
-    --texte: AMIKO;
+    --ff-titre: RUBIK;
+    --ff-sous-titre: LAILA;
+    --ff-texte: AMIKO;
 
     /*====    TAILLES DE POLICES    ====*/
-    --grand-titre: 3rem;
-    --titre: 2rem;
-    --sous-titre: 1.5rem;
-    --normal: 1rem;
-    --petit: 0.75rem;
+    --fs-grand-titre: 2.5rem;
+    --fs-titre: 1.75rem;
+    --fs-sous-titre: 1.5rem;
+    --fs-normal: 1rem;
+    --fs-petit: 0.75rem;
 }
 
 /*==================    POLICES    ==================*/
@@ -49,55 +49,176 @@ html {
 body {
     min-height: 100dvh;
     width: 100%;
-    font-family: "AMIKO";
+    font-family: var(--ff-texte);
 }
 
 /*==================    STYLE DES LIENS    ==================*/
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /*==================    STYLE DES LISTES    ==================*/
-li{
+li {
     list-style: none;
 }
 
 main {
-    width: 1440px;
-    height: auto;
-}
-
-header{
     width: 100%;
-    height: 100lvh;
+    min-height: 100vh;
+    background-color: var(--blanc);
 }
 
-
-
+/*==================    HEADER    ==================*/
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+video {
+    width: 100%;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 /*==================    BARRE DE NAVIGATION    ==================*/
 nav {
     display: flex;
-    height: 10lvh;
-    position: sticky;
-
-    transition: height 250ms linear;
+    width: 100%;
+    padding: 0.5rem 0;
+    position: fixed;
+    top: -10vh;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition:
+        translate 300ms ease-out,
+        opacity 200ms ease-out;
 }
-nav ul{
+
+nav ul {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 3.5rem;
+}
+nav ul li {
+    text-align: center;
+    width: 250px;
+}
+nav ul li a {
+    color: var(--noir);
+    font: italic bold var(--fs-titre) var(--ff-titre);
+}
+/*==================    BARRE DE NAVIGATION ANIMATION D'APPARUTION    ==================*/
+.scrolled {
+    opacity: 1;
+    translate: 0 10vh;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 3rem 1rem 3rem;
+    background-color: var(--noir);
+    color: var(--blanc);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer section:not(:last-child) {
+    width: 50%;
+    padding-bottom: 4rem;
+}
+
+.footer__droit {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
     gap: 2rem;
+}
+.footer__droit article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.footer__droit article:nth-child(1) h3 {
+    font: italic bold var(--fs-sous-titre) var(--ff-titre);
+}
+.footer__droit article:nth-child(1) input {
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+    border: 2px solid var(--blanc);
+    background-color: transparent;
+    border-radius: 2rem;
+    width: 450px;
+    color: var(--blanc);
+}
+.footer__droit article:nth-child(1) button {
+    position: relative;
+    top: -42%;
+    left: 18.5%;
+}
+.footer__droit article:nth-child(2) {
+    align-items: flex-start;
+    padding-left: 8rem;
 }
 
 
-/*==================    FAIRE UN EFFET DE PARALLAX SIMPLE    ==================*/
-/* .parallax_simple {
-    
-} */
+footer section:last-child {
+    padding-top: 1rem;
+    width: 100%;
+    border-top: 1px solid var(--blanc);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+footer section:last-child p:first-child {
+    color: var(--blanc);
+    padding-bottom: 1rem;
+}
 
+/*==================    COMPOSANTS BOUTONS    ==================*/
+button {
+    padding: 0.5rem 1.5rem;
+    font: normal bold 1.25rem var(--ff-titre);
+    outline: 3px solid transparent;
+    border-radius: 2rem;
+    border: none;
+    width: fit-content;
+    transition:
+        background-color 200ms ease-out,
+        color 200ms ease-out,
+        outline-color 200ms ease-out;
+}
 
-/*==================    CLASSE SPECIALE    ==================*/
-.animation{
-    transition: all 200ms ease-out;
+.button__vert {
+    background-color: var(--vert);
+    color: var(--noir);
+    outline-color: var(--vert);
+}
+.button__noir {
+    background-color: var(--noir);
+    color: var(--blanc);
+    outline-color: var(--noir);
+}
+.button__blanc-contour-noir {
+    background-color: var(--blanc);
+    color: var(--noir);
+    outline-color: var(--noir);
+}
+.button__blanc-contour-vert {
+    background-color: var(--blanc);
+    color: var(--noir);
+    outline-color: var(--vert);
+}
+.button__noir-contour-vert {
+    background-color: var(--noir);
+    color: var(--blanc);
+    outline-color: var(--vert);
 }
