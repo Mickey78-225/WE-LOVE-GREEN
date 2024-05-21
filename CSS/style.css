@@ -32,7 +32,6 @@
     font-family: AMIKO;
     src: url("FONT/Amiko-Regular.ttf");
 }
-
 /*==================    REINITIALISATION    ==================*/
 *,
 ::after,
@@ -52,17 +51,15 @@ body {
     font-family: var(--ff-texte);
 }
 
-/*==================    STYLE DES LIENS    ==================*/
+/*==================    STYLE DES a & DES li    ==================*/
 a {
     text-decoration: none;
     color: inherit;
 }
-
-/*==================    STYLE DES LISTES    ==================*/
 li {
     list-style: none;
 }
-
+/*==================    STYLE PAR DEFAUT DU MAIN    ==================*/
 main {
     width: 100%;
     min-height: 100vh;
@@ -77,13 +74,19 @@ header {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
 }
-video {
+.video_header {
     width: 100%;
-    z-index: -100;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -100;
+}
+video {
+    width: 100%;
 }
 /*==================    BARRE DE NAVIGATION    ==================*/
 nav {
@@ -101,7 +104,6 @@ nav {
         translate 300ms ease-out,
         opacity 200ms ease-out;
 }
-
 nav ul {
     display: flex;
     width: 100%;
@@ -123,23 +125,53 @@ nav ul li a {
     translate: 0 10vh;
 }
 
+/*==================    FOOTER    ==================*/
 footer {
     width: 100%;
-    padding: 2rem 3rem 1rem 3rem;
+    padding: 2rem 4rem 1rem;
     background-color: var(--noir);
     color: var(--blanc);
     display: flex;
     flex-wrap: wrap;
 }
-
 footer section:not(:last-child) {
     width: 50%;
     padding-bottom: 4rem;
 }
 
+/*==================    PARTIE DU LOGO    ==================*/
+.footer__gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__gauche .logo {
+    padding-left: 5rem;
+}
+.footer__gauche .reseaux-sociaux {
+    display: flex;
+    gap: 1rem;
+}
+.reseaux-sociaux figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+}
+.reseaux-sociaux figcaption {
+    font-size: 0.75rem;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+.reseaux-sociaux figure:hover figcaption {
+    opacity: 1;
+}
+
+/*==================    PARTIE DE LA NEWSLETTER    ==================*/
 .footer__droit {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-left: 4rem;
     gap: 2rem;
 }
@@ -159,6 +191,7 @@ footer section:not(:last-child) {
     border-radius: 2rem;
     width: 450px;
     color: var(--blanc);
+    outline: none;
 }
 .footer__droit article:nth-child(1) button {
     position: relative;
@@ -170,7 +203,7 @@ footer section:not(:last-child) {
     padding-left: 8rem;
 }
 
-
+/*==================    PARTIE DES CREDITS    ==================*/
 footer section:last-child {
     padding-top: 1rem;
     width: 100%;
