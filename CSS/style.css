@@ -100,6 +100,7 @@ nav {
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     opacity: 0;
+    z-index: 10000;
     transition:
         translate 300ms ease-out,
         opacity 200ms ease-out;
@@ -118,6 +119,29 @@ nav ul li {
 nav ul li a {
     color: var(--noir);
     font: italic bold var(--fs-titre) var(--ff-titre);
+}
+nav figure {
+    display: contents;
+}
+nav figure img {
+    height: 100px;
+    scale: 2.5;
+}
+.fa-angles-down {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--vert);
+    animation: slide-bottom 1000ms ease-out infinite both;
+}
+@keyframes slide-bottom {
+    0% {
+        translate: 0 0;
+    }
+    100% {
+        translate: 0 100px;
+    }
 }
 /*==================    BARRE DE NAVIGATION ANIMATION D'APPARUTION    ==================*/
 .scrolled {
@@ -147,6 +171,10 @@ footer section:not(:last-child) {
 }
 .footer__gauche .logo {
     padding-left: 5rem;
+}
+.logo img {
+    height: 200px;
+    scale: 2;
 }
 .footer__gauche .reseaux-sociaux {
     display: flex;
@@ -204,16 +232,27 @@ footer section:not(:last-child) {
 }
 
 /*==================    PARTIE DES CREDITS    ==================*/
-footer section:last-child {
-    padding-top: 1rem;
+.credit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem 0 0.5rem;
     width: 100%;
     border-top: 1px solid var(--blanc);
     text-align: center;
-    color: rgba(255, 255, 255, 0.3);
-}
-footer section:last-child p:first-child {
     color: var(--blanc);
-    padding-bottom: 1rem;
+}
+.credit article:first-child {
+    display: flex;
+    gap: 1.5rem;
+}
+.credit article:nth-child(2) p:not(:first-child){
+    color: rgba(255, 255, 255, 0.4);
+}
+.credit article:last-child {
+    display: flex;
+    gap: 2rem;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /*==================    COMPOSANTS BOUTONS    ==================*/
@@ -229,7 +268,6 @@ button {
         color 200ms ease-out,
         outline-color 200ms ease-out;
 }
-
 .button__vert {
     background-color: var(--vert);
     color: var(--noir);

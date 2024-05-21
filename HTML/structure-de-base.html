@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- LIENS CSS GENERAL -->
-        <link rel="stylesheet" href="../CSS/style.css" />
+        <link rel="stylesheet" href="/CSS/style.css" />
         <!-- LIENS DES ICONES FONT AWESOME -->
         <link
             rel="stylesheet"
@@ -28,7 +28,7 @@
                         <a href="/index.html">
                             <figure>
                                 <img
-                                    src="https://placehold.co/60"
+                                    src="/IMG/logo_welovegreen.png"
                                     alt="Image du logo"
                                 />
                             </figure>
@@ -42,9 +42,13 @@
                     </li>
                 </ul>
             </nav>
-            <video autoplay muted loop>
-                <source src="/IMG/background_header.mp4" type="video/mp4" />
-            </video>
+            <figure class="video_header">
+                <video autoplay muted loop>
+                    <source src="/IMG/background_header.mp4" type="video/mp4" />
+                </video>
+            </figure>
+
+            <i class="fa-solid fa-angles-down fa-xl"></i>
         </header>
 
         <main>
@@ -57,7 +61,7 @@
             <section class="footer__gauche">
                 <figure class="logo">
                     <img
-                        src="https://placehold.co/150x200"
+                        src="/IMG/logo_welovegreen.png"
                         alt="Logo du festival"
                     />
                 </figure>
@@ -128,7 +132,7 @@
                         <p>Mentions légales</p>
                     </a>
                     <a href="#">
-                        <p>Plolitiques de confidentialité</p>
+                        <p>Politiques de confidentialité</p>
                     </a>
                     <a href="#">
                         <p>Données personnels et cookies</p>
@@ -136,10 +140,30 @@
                 </article>
             </section>
 
-            <section>
-                <p>Tous droits réservés © WE LOVE GREEN 2024 concept</p>
-                <p>Design et Dev</p>
-                <p>EHUI Michel-Ange & MANUEL Mélissa</p>
+            <section class="credit">
+                <article>
+                    <figure><i class="fa-regular fa-credit-card fa-2xl"></i></figure>
+                    <figure><i class="fa-brands fa-cc-visa fa-2xl"></i></figure>
+                    <figure><i class="fa-brands fa-cc-mastercard fa-2xl"></i></figure>
+                    <figure><i class="fa-brands fa-cc-apple-pay fa-2xl"></i></figure>
+                    <figure><i class="fa-brands fa-cc-paypal fa-2xl"></i></figure>
+                    <!-- <figure></figure> -->
+                </article>
+                <article>
+                    <p>Tous droits réservés © WE LOVE GREEN 2024 concept</p>
+                    <p>Design et Dev</p>
+                    <p>EHUI Michel-Ange & MANUEL Mélissa</p>
+                </article>
+                <article>
+                    <figure>
+                        <i class="fa-solid fa-code"></i>
+                        <figcaption>Github projet</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="fa-brands fa-github"></i>
+                        <figcaption>Figma projet</figcaption>
+                    </figure>
+                </article>
             </section>
         </footer>
 
