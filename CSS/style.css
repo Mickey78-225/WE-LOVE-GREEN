@@ -50,12 +50,23 @@ body {
     width: 100%;
     font-family: var(--ff-texte);
 }
+/*==================    SCROLLBAR   ==================*/
+/* Pas supporté par IOS */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--blanc);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--vert);
+    border-radius: 1rem;
+}
 
 /*==================    STYLE DES a & DES li    ==================*/
 a {
     text-decoration: none;
     color: inherit;
 }
+
 li {
     list-style: none;
 }
@@ -149,9 +160,6 @@ nav figure img {
     }
 }
 
-
-
-
 /*==================    FOOTER    ==================*/
 footer {
     width: 100%;
@@ -206,6 +214,13 @@ footer section:not(:last-child) {
     padding-left: 4rem;
     gap: 2rem;
 }
+.footer__droit a {
+    border-bottom: 1.5px solid transparent;
+    transition: border 200ms ease-out;
+}
+.footer__droit a:hover {
+    border-color:  var(--vert);
+}
 .footer__droit article {
     display: flex;
     flex-direction: column;
@@ -249,7 +264,7 @@ footer section:not(:last-child) {
     display: flex;
     gap: 1.5rem;
 }
-.credit article:nth-child(2) p:not(:first-child){
+.credit article:nth-child(2) p:not(:first-child) {
     color: rgba(255, 255, 255, 0.4);
 }
 .credit article:last-child {
