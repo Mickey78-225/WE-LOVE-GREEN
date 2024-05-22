@@ -4,3 +4,6 @@ git push
 
 //Faire la mise à jour du dossier local
 git pull
+
+
+git push origin main.
