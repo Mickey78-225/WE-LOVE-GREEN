@@ -2,12 +2,19 @@ function handleScroll() {
     const nav = document.querySelector("nav");
     if (window.scrollY > 0) {
         nav.classList.add("scrolled");
-        console.log('scrolled');
     } else {
         nav.classList.remove("scrolled");
-        console.log('no-scrolled');
     }
 }
+
+// function afficherFestivalDeroulant() {
+//     const festival = document.getElementById(festival);
+//     const menu_festival = document.getElementsByClassName(menu_festival)
+//     if  (window.onclick(festival)) {
+//         menu_festival.style.display = "block";
+//     }
+// }
+
 
 // function addClassOnHover() {
 //     const composant_button = document.querySelector("button")
@@ -39,4 +46,5 @@ function handleScroll() {
 
 // // Exemple d'utilisation :
 // addClassOnHover("monBouton", "hovered");
+
 document.addEventListener("scroll", handleScroll);
