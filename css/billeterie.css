@@ -10,9 +10,7 @@ h1 {
 
 .nom_artiste {
 }
-span {
-    background-color: var(--orange);
-}
+
 .nom_artiste p {
     font: bold var(--fs-moyen-titre) var(--ff-texte);
     font-size: var(--fs-sous-titre);
@@ -22,6 +20,8 @@ span {
     color: var(--vert);
 }
 .point {
+    background-color: aqua;
+    line-height: normal;
     font-size: 5rem;
 }
 
@@ -63,6 +63,7 @@ span {
 .sold-out {
     padding: 1rem 2rem;
     border: 2px solid black;
+    color: var(--vert);
 }
 
 .reduction {
@@ -96,7 +97,7 @@ h2 {
     padding: 1.5rem 1rem;
     width: 400px;
     height: 250px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     backdrop-filter: blur(12px);
 }
