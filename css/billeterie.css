@@ -69,7 +69,6 @@ h1 {
 .reduction {
     align-items: center;
     gap: 2rem;
-    background-color: var(--vert);
 }
 .reduction article {
     padding: 1rem;
