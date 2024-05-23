@@ -1,0 +1,117 @@
+/*==================    LE BACKGROUND ANIME    ==================*/
+body {
+    background: url("");
+}
+
+h1 {
+    font: italic bold var(--fs-grand-titre) var(--ff-titre);
+    padding: 0 10rem;
+}
+
+.nom_artiste {
+    margin: 1rem 0;
+    padding: 2rem;
+    background-color: var(--vert);
+}
+span {
+    background-color: var(--orange);
+}
+.nom_artiste p {
+    font: bold var(--fs-moyen-titre) var(--ff-texte);
+    font-size: var(--fs-sous-titre);
+    background-color: var(--violet);
+}
+.artiste_phare {
+    color: var(--vert);
+}
+.point {
+    font-size: 5rem;
+}
+
+.billet_jour {
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--vert);
+}
+.billet_jour article {
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--violet);
+}
+
+.supergreen{
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--vert);
+}
+.supergreen article{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--violet);
+}
+
+.pass_jour{
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--vert);
+}
+.pass_jour article{
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--violet);
+}
+.pass_jour h2:last-child{
+    margin-top: 5rem;
+}
+.sold-out {
+    padding: 1rem 2rem;
+    border: 2px solid black;
+}
+
+
+.reduction {
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--vert);
+}
+.reduction article{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: var(--violet);
+}
+
+
+/*==================    ELEMENT REPETITIF AVEC LE MEME STYLE DANS LA PAGE    ==================*/
+h2{
+    font-family: var(--ff-titre);
+    text-align: center;
+}
+.card {
+    padding: 1.5rem 1rem;
+    width: 400px;
+    height: 250px;
+    background-color: var(--orange);
+    border-radius: 2rem;
+}
