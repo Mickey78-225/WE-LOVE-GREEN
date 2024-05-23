@@ -1,0 +1,128 @@
+.item {
+    /* A SUPPRIMER */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: 2px solid var(--noir);
+}
+
+.haut {
+    display: flex;
+    background-color: var(--vert);
+    height: 410px;
+}
+.boissons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+
+    flex: 3;
+}
+.photo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+
+    flex: 4;
+}
+
+.centre{
+    display: flex;
+    background-color: var(--vert);
+}
+.centre article{
+    display: flex;
+    flex-direction: column;
+}
+.centre article:first-child{
+    flex: 4;
+}
+.flyer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+
+}
+.oiseaux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+
+    height: 410px;
+}
+.centre article:last-child{
+    flex: 3;
+}
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 2;
+}
+.texte1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 1;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 2;
+}
+.photo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 3;
+}
+
+.bas{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--vert);
+}
+.texte2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    height: 300px;
+    flex: 1;
+}
+.bas article{
+    display: flex;
+    flex: 2;
+}
+.photo3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 3.5;
+}
+.texte3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 1;
+}
+.photo4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--noir);
+    flex: 3.5;
+}
+
