@@ -9,9 +9,6 @@ h1 {
 }
 
 .nom_artiste {
-    margin: 1rem 0;
-    padding: 2rem;
-    background-color: var(--vert);
 }
 span {
     background-color: var(--orange);
@@ -29,13 +26,8 @@ span {
 }
 
 .billet_jour {
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: var(--vert);
 }
 .billet_jour article {
     padding: 1rem;
@@ -44,15 +36,10 @@ span {
     background-color: var(--violet);
 }
 
-.supergreen{
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+.supergreen {
     gap: 2rem;
-    background-color: var(--vert);
 }
-.supergreen article{
+.supergreen article {
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -60,22 +47,17 @@ span {
     background-color: var(--violet);
 }
 
-.pass_jour{
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+.pass_jour {
     align-items: center;
     gap: 2rem;
-    background-color: var(--vert);
 }
-.pass_jour article{
+.pass_jour article {
     padding: 1rem;
     display: flex;
     gap: 2rem;
     background-color: var(--violet);
 }
-.pass_jour h2:last-child{
+.pass_jour h2:last-child {
     margin-top: 5rem;
 }
 .sold-out {
@@ -83,17 +65,12 @@ span {
     border: 2px solid black;
 }
 
-
 .reduction {
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 2rem;
     background-color: var(--vert);
 }
-.reduction article{
+.reduction article {
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -102,9 +79,16 @@ span {
     background-color: var(--violet);
 }
 
-
 /*==================    ELEMENT REPETITIF AVEC LE MEME STYLE DANS LA PAGE    ==================*/
-h2{
+:is(.nom_artiste, .billet_jour, .supergreen, .pass_jour, .reduction) {
+    margin: 1rem 0;
+    padding: 2rem;
+}
+:is(.billet_jour, .supergreen, .pass_jour, .reduction) {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
     font-family: var(--ff-titre);
     text-align: center;
 }
@@ -112,6 +96,7 @@ h2{
     padding: 1.5rem 1rem;
     width: 400px;
     height: 250px;
-    background-color: var(--orange);
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 2rem;
+    backdrop-filter: blur(12px);
 }

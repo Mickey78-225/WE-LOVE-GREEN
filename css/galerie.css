@@ -1,11 +1,3 @@
-.item {
-    /* A SUPPRIMER */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    border: 2px solid var(--noir);
-}
 
 .haut {
     display: flex;
