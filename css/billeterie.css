@@ -2,6 +2,7 @@
 main {
     position: relative;
     background-color: transparent;
+    padding: 2rem 0;
 }
 header{
     min-height: 0;
@@ -12,11 +13,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    /* overflow: hidden; */
     z-index: -1;
 }
 .gradient_video video {
-    /* height: 100%; */
     width: 100%;
     rotate: 180deg;
 }
@@ -123,12 +122,9 @@ h4 {
     backdrop-filter: blur(12px);
     align-items: center;
     justify-content: space-between;
-    /* filter: blur(12px); */
     position: relative;
 }
-/* .effet{
-    filter: blur(0);
-} */
+
 .card::before{
     content: "";
     width: 100%;
@@ -148,4 +144,5 @@ h4 {
 }
 .epuise{
     opacity: 0.5;
+    cursor: not-allowed;
 }
