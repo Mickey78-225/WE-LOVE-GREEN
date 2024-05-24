@@ -55,7 +55,6 @@ video {
 }
 :is(.presentation article, .infos_pratiques article) {
     padding: 1rem;
-    background-color: var(--violet);
 }
 .artiste {
 }
@@ -77,7 +76,6 @@ video {
     width: 40%;
     height: 450px;
     border-radius: 2rem;
-    background-color: var(--violet);
     overflow: hidden;
 }
 .artiste article:last-child figure:last-child img{
