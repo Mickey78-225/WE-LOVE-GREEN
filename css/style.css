@@ -68,6 +68,12 @@ li {
     list-style: none;
 }
 
+/*==================    REDIMMENSSION DES IMAGES DU MAIN   ==================*/
+main img {
+    width: 100%;
+    height: auto;
+}
+
 /*==================    STYLE PAR DEFAUT DU MAIN    ==================*/
 main {
     width: 100%;

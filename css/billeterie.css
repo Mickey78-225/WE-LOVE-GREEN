@@ -1,14 +1,16 @@
 /*==================    LE BACKGROUND ANIME    ==================*/
 body {
-    background: url("");
+    background: url('../img/billetterie/video_background.mp4');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 h1 {
     font: italic bold var(--fs-grand-titre) var(--ff-titre);
     padding: 0 10rem;
 }
 
 .nom_artiste {
+    text-align: center;
 }
 
 .nom_artiste p {
@@ -49,7 +51,8 @@ h1 {
 
 .pass_jour {
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
+    position: relative;
 }
 .pass_jour article {
     padding: 1rem;
@@ -64,6 +67,12 @@ h1 {
     padding: 1rem 2rem;
     border: 2px solid black;
     color: var(--vert);
+    rotate: 45deg;
+    position: absolute;
+    top: 102%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font: italic bold var(--fs-sous-titre) var(--ff-titre);
 }
 
 .reduction {
@@ -84,13 +93,16 @@ h1 {
     margin: 1rem 0;
     padding: 2rem;
 }
-:is(.billet_jour, .supergreen, .pass_jour, .reduction) {
+:is(.billet_jour, .supergreen, .pass_jour, .reduction, .card) {
     display: flex;
     flex-direction: column;
 }
 h2 {
     font-family: var(--ff-titre);
     text-align: center;
+}
+h4 {
+    font: bold var(--fs-sous-titre) var(--ff-titre);
 }
 .card {
     padding: 1.5rem 1rem;
@@ -99,4 +111,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: space-between;
 }

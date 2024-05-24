@@ -1,120 +1,239 @@
 
+/*==================    LA SECTION HAUTE DU MAIN   ==================*/
 .haut {
     display: flex;
-    background-color: var(--vert);
     height: 410px;
 }
-.boissons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-
+/*==================    ILLUSTRATION BOISSON   ==================*/
+.boissons {
+    background-color: var(--orange);
     flex: 3;
 }
-.photo1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-
+*.boissons img {
+    scale: 0.5;
+}
+.boissons:hover img {
+    animation: wobble-hor-bottom 0.8s infinite both;
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+/*==================    PHOTO 1   ==================*/
+.photo1 {
     flex: 4;
 }
 
-.centre{
+/*==================    LA SECTION CENTRE DU MAIN   ==================*/
+.centre {
     display: flex;
-    background-color: var(--vert);
 }
-.centre article{
+.centre article {
     display: flex;
     flex-direction: column;
 }
-.centre article:first-child{
+
+/*==================    PARTIE GAUCHE DE SECTION CENTRE   ==================*/
+.centre article:first-child {
     flex: 4;
 }
-.flyer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-
-}
-.oiseaux{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-
+/* .flyer {
+} */
+.oiseaux {
+    flex-direction: column;
     height: 410px;
+    
 }
-.centre article:last-child{
-    flex: 3;
+.oiseaux:hover img{
+    animation: slide-out-right 1000ms ease-in infinite alternate both;
 }
-.burger{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 2;
-}
-.texte1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 1;
-}
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 2;
-}
-.photo2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 3;
+@keyframes slide-out-right {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+.oiseaux img {
+    scale: 0.8;
 }
 
-.bas{
+/*==================    PARTIE DROITE DE SECTION CENTRE   ==================*/
+.centre article:last-child {
+    flex: 3;
+}
+/*==================    ILLUSTRATION BURGER   ==================*/
+.burger {
+    background-color: var(--violet);
+    flex: 2;
+}
+.burger img {
+    width: 100%;
+    scale: 0.5;
+}
+.burger:hover img {
+    animation: jello-horizontal 0.9s ease-in-out infinite both;
+}
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.texte1 {
+    height: 106px;
+    font: bold var(--fs-moyen-titre) var(--ff-titre);
+}
+
+/*==================    ILLUSTRATION MAIN   ==================*/
+.main {
+    background-color: var(--jaune);
+    height: 406px;
+}
+.main img {
+    scale: 0.4;
+}
+.main:hover img {
+    animation: vibrate-3 0.5s linear infinite both;
+}
+@keyframes vibrate-3 {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-2px, -2px);
+    }
+    20% {
+        transform: translate(2px, -2px);
+    }
+    30% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(2px, 2px);
+    }
+    50% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, -2px);
+    }
+    70% {
+        transform: translate(-2px, 2px);
+    }
+    80% {
+        transform: translate(-2px, -2px);
+    }
+    90% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.photo2 {
+    /* width: 609px; */
+    height: 631px;
+    overflow: hidden;
+}
+.photo2 figure {
+    width: 100%;
+    height: 100%;
+}
+.photo2 figure img{
+    height: 100%;
+    width: 100%;
+}
+
+/*==================   LA SECTION BASSE DU MAIN   ==================*/
+.bas {
     display: flex;
     flex-direction: column;
     background-color: var(--vert);
 }
-.texte2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
+.texte2 {
     height: 300px;
     flex: 1;
+    background-color: var(--noir);
+    padding: 1rem;
+    font: bold var(--fs-grand-titre) var(--ff-titre);
+    color: var(--blanc);
+    word-spacing: 1rem;
 }
-.bas article{
+.bas article {
     display: flex;
     flex: 2;
 }
-.photo3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 3.5;
+.photo3 {
+    flex: 5;
 }
-.texte3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
+.photo3 img {
+    height: 100%;
+}
+.texte3 {
     flex: 1;
+    font: bold var(--fs-moyen-titre) var(--ff-titre);
 }
-.photo4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--noir);
-    flex: 3.5;
+.photo4 {
+    flex: 5;
 }
 
+:is(
+    .boissons,
+    .photo1,
+    .photo2,
+    .flyer,
+    .oiseaux,
+    .burger,
+    .texte1,
+    .main,
+    .texte2,
+    .photo3,
+    .texte3,
+    .photo4 ) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid var(--noir);
+        overflow: hidden;
+}
