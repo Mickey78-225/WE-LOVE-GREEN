@@ -58,6 +58,11 @@ h1 {
      
 }
 
+.supergreen p {
+    text-align: justify;
+    padding-left: 0 50rem;
+}
+
 .pass_jour {
     align-items: center;
     gap: 4rem;
