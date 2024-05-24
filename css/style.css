@@ -58,16 +58,20 @@ body {
     border-radius: 1rem;
 }
 
-/*==================    STYLE DES a & DES li    ==================*/
+/*==================    STYLE DES a & DES li & h1    ==================*/
 a {
     text-decoration: none;
     color: inherit;
 }
-
 li {
     list-style: none;
 }
 
+h1 {
+    padding-top: 2rem;
+    text-align: center;
+    font: bold var(--fs-grand-titre) var(--ff-titre);
+}
 /*==================    REDIMMENSSION DES IMAGES DU MAIN   ==================*/
 main img {
     width: 100%;

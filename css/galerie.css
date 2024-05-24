@@ -238,8 +238,3 @@
         overflow: hidden;
 }
 
-h1 {
-    padding-top: 2rem;
-    text-align: center;
-    font: bold var(--fs-grand-titre) var(--ff-titre);
-}
