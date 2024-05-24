@@ -29,6 +29,7 @@
     gap: 15rem;
     padding: 1rem;
     background-color: var(--violet);
+    z-index: 2;
 }
 .date a {
     font: bold var(--fs-sous-titre) var(--ff-titre);
@@ -40,7 +41,6 @@
 .artistes__container article {
     padding: 1rem 0;
     gap: 6rem;
-    background-color: var(--violet);
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -65,6 +65,10 @@
 .circle img {
     height: 100%;
     width: auto;
+}
+
+.img_scale {
+    scale: 1.2;
 }
 
 .autres_activites article {
