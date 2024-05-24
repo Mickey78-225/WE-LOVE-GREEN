@@ -29,6 +29,7 @@
     gap: 15rem;
     padding: 1rem;
     background-color: var(--violet);
+    z-index: 2;
 }
 .date a {
     font: bold var(--fs-sous-titre) var(--ff-titre);
