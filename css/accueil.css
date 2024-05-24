@@ -1,5 +1,4 @@
-
-header{
+header {
     height: 100vh;
 }
 .video_header {
@@ -47,41 +46,62 @@ video {
     background-color: transparent;
 }
 
-.artiste {
+:is(.artiste, .presentation, .infos_pratiques) {
     margin: 1rem 0;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--vert);
 }
-.artiste article {
+:is(.presentation article, .infos_pratiques article) {
     padding: 1rem;
     background-color: var(--violet);
+}
+.artiste {
+}
+.artiste article:first-child span:hover {
+    color: var(--vert);
+}
+
+.artiste article:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem 10rem;
+}
+.artiste article:last-child figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 450px;
+    border-radius: 2rem;
+    background-color: var(--violet);
+    overflow: hidden;
+}
+.artiste article:last-child figure:last-child img{
+    scale: 2;
 }
 
 .presentation {
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: var(--vert);
 }
-.presentation article {
-    padding: 1rem;
-    background-color: var(--violet);
+.presentation article:first-child {
+    padding-left: 15rem;
+}
+.presentation article:first-child{
+    font-size: 1.5rem;
+}
+.presentation article:first-child button{
+    margin-left: 80%;
 }
 
-.infos_pratiques{
-    margin: 1rem 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: var(--vert);
+.infos_pratiques {
 }
+.infos_pratiques h2{
+    font-family: var(--ff-titre);
+    text-align: center;
+}
+
 .infos_pratiques article {
-    padding: 1rem;
-    background-color: var(--violet);
 }
