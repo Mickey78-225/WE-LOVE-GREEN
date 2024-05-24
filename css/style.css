@@ -283,6 +283,11 @@ button {
     color: var(--noir);
     outline-color: var(--noir);
 }
+.boutton_blanc-contour-noir:hover{
+    background-color: var(--noir);
+    color: var(--blanc);
+    outline-color: var(--noir);
+}
 .boutton_blanc-contour-vert {
     background-color: var(--blanc);
     color: var(--noir);
@@ -291,5 +296,10 @@ button {
 .boutton_noir-contour-vert {
     background-color: var(--noir);
     color: var(--blanc);
+    outline-color: var(--vert);
+}
+.boutton_noir-contour-vert:hover{
+    background-color: var(--vert);
+    color: var(--noir);
     outline-color: var(--vert);
 }

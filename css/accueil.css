@@ -57,9 +57,45 @@ video {
     padding: 1rem;
     background-color: var(--violet);
 }
-.artiste {
+
+.artiste article:first-child {
+    overflow: hidden;
+    padding: 1rem 0;
 }
-.artiste article:first-child span:hover {
+.artiste :is(.de_gauche_a_droite, .de_droite_a_gauche) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.artiste :is(.de_gauche_a_droite, .de_droite_a_gauche) p {
+    font: italic bold var(--fs-grand-titre) var(--ff-titre);
+    margin: 0 5rem;
+}
+.de_gauche_a_droite {
+    animation: slide-right 7500ms linear infinite both;
+}
+@keyframes slide-right {
+    0% {
+        translate: 0;
+    }
+    100% {
+        translate: 100vw;
+    }
+}
+.de_droite_a_gauche {
+    animation: slide-left 7500ms linear infinite both;
+}
+@keyframes slide-left {
+    0% {
+        translate: 100vw;
+    }
+    100% {
+        translate: 0;
+    }
+}
+
+.artiste article:first-child p:hover {
     color: var(--vert);
 }
 
@@ -80,7 +116,7 @@ video {
     background-color: var(--violet);
     overflow: hidden;
 }
-.artiste article:last-child figure:last-child img{
+.artiste article:last-child figure:last-child img {
     scale: 2;
 }
 
@@ -89,16 +125,61 @@ video {
 .presentation article:first-child {
     padding-left: 15rem;
 }
-.presentation article:first-child{
+.presentation article:first-child {
     font-size: 1.5rem;
 }
-.presentation article:first-child button{
+.presentation article:first-child button {
     margin-left: 80%;
+}
+
+/*==================    SPLIDE CAROUSEL    ==================*/
+.presentation article:last-child {
+    display: flex;
+    overflow: hidden;
+}
+.splide {
+    cursor: grab;
+    display: flex;
+    align-items: center;
+}
+.splide__slide img {
+    border-radius: 2rem;
+    height: 500px;
+    width: auto;
 }
 
 .infos_pratiques {
 }
-.infos_pratiques h2{
+.lieu {
+    display: flex;
+}
+.lieu :is(div, figure) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lieu div {
+    padding-left: 20rem;
+}
+.lieu figure {
+    border-radius: 2rem;
+    overflow: hidden;
+    align-items: center;
+}
+.deplacement figure{
+    scale: 0.5;
+    border-radius: 2rem;
+}
+.deplacement figure img{
+    
+}
+
+
+
+
+
+.infos_pratiques h2 {
     font-family: var(--ff-titre);
     text-align: center;
 }
