@@ -123,8 +123,6 @@ video {
 }
 
 /*==================    TEXTE + CARROUSEL IMG    ==================*/
-.presentation {
-}
 .presentation article:first-child {
     padding-left: 15rem;
 }
