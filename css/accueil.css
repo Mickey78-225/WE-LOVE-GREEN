@@ -1,3 +1,4 @@
+/*==================    VIDEO DANS LE HEADER    ==================*/
 header {
     height: 100vh;
 }
@@ -15,6 +16,7 @@ header {
 video {
     width: 100%;
 }
+
 /*==================    FLECHE QUI INDIQUE LE SCROLL    ==================*/
 .fa-angles-down {
     position: absolute;
@@ -34,6 +36,7 @@ video {
         translate: 0 75px;
     }
 }
+
 /*==================    BOUTON CTA HEADER    ==================*/
 .cta {
     position: absolute;
@@ -41,11 +44,11 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/*==================    BOUTON CTA HEADER    ==================*/
 .cta button {
     background-color: transparent;
 }
 
+/*==================    STYLE REPETITIF DANS CERTAINS BLOCK    ==================*/
 :is(.artiste, .presentation, .infos_pratiques) {
     margin: 1rem 0;
     padding: 2rem;
@@ -57,6 +60,7 @@ video {
     padding: 1rem;
 }
 
+/*==================    BLOCK ARTISTE: CAROUSEL + IMGAGE    ==================*/
 .artiste article:first-child {
     overflow: hidden;
     padding: 1rem 0;
@@ -114,10 +118,11 @@ video {
     border-radius: 2rem;
     overflow: hidden;
 }
-.artiste article:last-child figure:last-child img {
-    scale: 2;
+.scale {
+    scale: 1.3;
 }
 
+/*==================    TEXTE + CARROUSEL IMG    ==================*/
 .presentation {
 }
 .presentation article:first-child {
@@ -132,55 +137,76 @@ video {
 
 /*==================    SPLIDE CAROUSEL    ==================*/
 .presentation article:last-child {
-    display: flex;
     overflow: hidden;
 }
 .splide {
     cursor: grab;
+}
+.splide__slide figure {
+    height: 100%;
     display: flex;
-    align-items: center;
-}
-.splide__slide img {
-    border-radius: 2rem;
-    height: 500px;
-    width: auto;
-}
-
-.infos_pratiques {
-}
-.lieu {
-    display: flex;
-}
-.lieu :is(div, figure) {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-.lieu div {
-    padding-left: 20rem;
-}
-.lieu figure {
-    border-radius: 2rem;
-    overflow: hidden;
     align-items: center;
-}
-.deplacement figure{
-    scale: 0.5;
+    overflow: hidden;
     border-radius: 2rem;
 }
-.deplacement figure img{
-    
-}
 
-
-
-
-
+/*==================    INFOS PRATIQUES    ==================*/
 .infos_pratiques h2 {
     font-family: var(--ff-titre);
     text-align: center;
 }
 
-.infos_pratiques article {
+/*==================    LIEU & HORAIRES    ==================*/
+.lieu {
+    display: flex;
+}
+.lieu :is(div, figure) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lieu div {
+    padding-left: 15rem;
+    flex: 1;
+}
+.lieu figure {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    align-items: center;
+    height: 450px;
+    width: 700px;
+}
+.lieu figure img {
+    scale: 1.1;
+}
+
+/*==================    DEPLACEMENT    ==================*/
+.deplacement {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15rem;
+}
+.deplacement figure {
+    margin: 2rem 0 0 13%;
+    border-radius: 1rem;
+}
+.deplacement figure img {
+    width: 75%;
+}
+
+.consigne {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.consigne div {
+    padding-left: 15rem;
+}
+.consigne figure {
+    display: flex;
+    justify-content: center;
+}
+.consigne figure img {
+    width: 50%;
 }

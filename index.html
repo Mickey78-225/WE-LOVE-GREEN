@@ -1,314 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LIENS CSS GENERAL -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- LIENS POLICES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- LIENS DES ICONES FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- LIENS CSS GENERAL -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- LIENS POLICES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap"
+            rel="stylesheet" />
+        <!-- LIENS DES ICONES FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- BALISE META -->
-    <meta name="description" content="We Love Green est un festival français de musique électro-pop organisé à Paris depuis 2010, se déroulant à l’approche de l’été. We Love Green allie événement artistique et respect de l'environnement." />
-    <meta name="keywords" content="festival, festival paris, festival été," />
+        <!-- BALISE META -->
+        <meta
+            name="description"
+            content="We Love Green est un festival français de musique électro-pop organisé à Paris depuis 2010, se déroulant à l’approche de l’été. We Love Green allie événement artistique et respect de l'environnement." />
+        <meta
+            name="keywords"
+            content="festival, festival paris, festival été," />
 
-    <!-- L'ICONE DE LA PAGE -->
-    <link rel="apple-touch-icon" sizes="180x180" href="ressource/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="ressource/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="ressource/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="ressource/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="ressource/favicon/safari-pinned-tab.svg" color="#08fc66" />
-    <meta name="msapplication-TileColor" content="#ebf192" />
-    <meta name="theme-color" content="#ffffff" />
+        <!-- L'ICONE DE LA PAGE -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="ressource/favicon/apple-touch-icon.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="ressource/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="ressource/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="ressource/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="ressource/favicon/safari-pinned-tab.svg"
+            color="#08fc66" />
+        <meta name="msapplication-TileColor" content="#ebf192" />
+        <meta name="theme-color" content="#ffffff" />
 
-    
-    <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    
-    <title>WE LOVE GREEN - Acceuil</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="festival">FESTIVAL <i class="fa-solid fa-angle-down"></i></a>
-                </li>
-                <li>
-                    <a href="./html/billeterie.html">BILLETERIE</a>
-                </li>
-                <li>
-                    <a href="./index.html">
-                        <figure>
-                            <img src="./img/logo_welovegreen_new.png" alt="Image du logo" />
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="./html/programmation.html">PROGRAMMATION</a>
-                </li>
-                <li>
-                    <a href="./html/galerie.html">AFFICHE</a>
-                </li>
-            </ul>
-        </nav>
-        <figure class="video_header">
-            <video autoplay muted loop>
-                <source src="./img/accueil/video.mp4" type="video/mp4" />
-            </video>
-        </figure>
+        <link rel="stylesheet" href="css/accueil.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
-        <a href="./html/billeterie.html" class="cta">
-            <button class="boutton_noir-contour-vert">PRENDS TON PASS</button>
-        </a>
-        <i class="fa-solid fa-angles-down fa-xl"></i>
-    </header>
-
-    <!--++++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++++-->
-    <main>
-        <section class="artiste">
-            <article>
-                <div class="de_gauche_a_droite">
-                    <p>SZA</p>
-                    <p>BURNA BOY</p>
-                    <p>JUSTICE</p>
-                    <p>PEGGY GOU</p>
-                    <p>KAYTRANADA</p>
-                    <p>SZA</p>
-                    <p>BURNA BOY</p>
-                    <p>JUSTICE</p>
-                    <p>PEGGY GOU</p>
-                    <p>KAYTRANADA</p>
-                    <p>SZA</p>
-                    <p>BURNA BOY</p>
-                    <p>JUSTICE</p>
-                    <p>PEGGY GOU</p>
-                    <p>KAYTRANADA</p>
-                    <p>SZA</p>
-                    <p>BURNA BOY</p>
-                    <p>JUSTICE</p>
-                    <p>PEGGY GOU</p>
-                    <p>KAYTRANADA</p>
-                </div>
-                <div class="de_droite_a_gauche">
-                    <p>FOUR TET</p>
-                    <p>SHAY</p>
-                    <p>CHASE & STATUS DJ</p>
-                    <p>JOSMAN</p>
-                    <p>KIM GORDON</p>
-                    <p>FOUR TET</p>
-                    <p>SHAY</p>
-                    <p>CHASE & STATUS DJ</p>
-                    <p>JOSMAN</p>
-                    <p>KIM GORDON</p>
-                    <p>FOUR TET</p>
-                    <p>SHAY</p>
-                    <p>CHASE & STATUS DJ</p>
-                    <p>JOSMAN</p>
-                    <p>KIM GORDON</p>
-                    <p>FOUR TET</p>
-                    <p>SHAY</p>
-                    <p>CHASE & STATUS DJ</p>
-                    <p>JOSMAN</p>
-                    <p>KIM GORDON</p>
-                </div>
-            </article>
-            <article>
-                <figure>
-                    <img src="./img/accueil/burna.png" alt="Photo de l'artiste Burna Boy avec un fond ">
-                </figure>
-                <figure>
-                    <img src="./img/accueil/justice.jpg" alt="Photo du duo Justice">
-                </figure>
-                <h2><a href="./html/programmation.html">ET BIEN D'AUTRES</a></h2>
-            </article>
-        </section>
-        <section class="presentation">
-            <article>
-                <p>Cette année, <b>WE LOVE GREEN</b> ne déroge pas à la règle, accueille stars confirmées, espoirs</p>
-                <p> prometteurs et talents de demain. Avec un line-up excitant sexy, dansant, groovy et électrique.</p>
-                <p> Mais pas que ! </p>
-                <p>Retrouvez la scène <b>Think Tank</b> avec des discussions entre personnalités engagées qui seront</p>
-                <p> présent pour vous offrir deux jours de bouillonnement d’idées pour préserver notre planète ,</p>
-                <p> le <b>Village des Innovations</b>  et bien d’autres activité pendant votre festival.</p>
-                <button class="boutton_blanc-contour-noir">EN SAVOIR PLUS</button>
-            </article>
-            <article>
-                <section class="splide" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide"><img src="./img/accueil/carrousel.jpg" alt=""></li>
-                              <li class="splide__slide"><img src="./img/accueil/carrousel2.jpg" alt=""></li>
-                              <li class="splide__slide"><img src="./img/accueil/carrousel3.jpg" alt=""></li>
-                              <li class="splide__slide"><a href=""><button class=".boutton_vert">VOIR GALERIE</button></a></li>
-                          </ul>
-                    </div>
-                  </section>
-            </article>
-        </section>
-        <section class="infos_pratiques">
-            <h2>INFOS PRATIQUES</h2>
-            <article class="lieu">
-                <div> 
-                    <h3>LIEU & HORAIRES</h3>
-                    <p>LIEU : LE BOIS DE VINCENNES</p>
-                    <br>
-                    <p>Plaine de la Belle Etoile</p>
-                    <p>Accès par la Route Dauphiné via</p>
-                    <p>L’Esplanade Saint Louis</p>
-                    <p>Bois de Vincennes, 75012 Paris</p>
-                    <br>
-                    <p>HORAIRES : 31 MAI, 1er & 2 JUIN 2024</p>
-                    <br>
-                    <p>Vendredi : 17h30 – 01h00</p>
-                    <p>Samedi : 14h00 – 01h00</p>
-                    <p>Dimanche : 14h00 – 00h00</p>
-                </div>
-                <figure><img src="./img/accueil/scene.jpeg" alt="Photo de la scène de We love Green"></figure>
-               
-            </article>
-            <article class="deplacement">
-                <h3>VENIR AU FESTIVAL</h3>
-                <br>
-                <dl>
-                    <dt>EN TRANSPORT EN COMMUN</dt>
-                    <br>
-                    <dd>Métro : Ligne 1 – Château de Vincennes</dd>
-                    <p>Les horaires des derniers métro au départ de Château de Vincennes ci-dessous : 
-                        <br>
-                        Vendredi 31 Mai : 1h39
-                        Samedi 1er Juin : 1h39
-                        Dimanche 2 Juin : 00h39</p>
-                    <br>
-                    <dd>RER : A – Château de Vincennes</dd>
-                    <dd>Bus : Ligne 56 (Barbès, Gare de l’Est, République, Oberkampf, Nation, Château de Vincennes)</dd>
-                    <dd>Noctilien : Ligne N11 et N33</dd>
-
-                    <dt>EN TRAIN</dt>
-                    <br>
-                    <dd>Ne partez pas à la dernière minute et réservez dès maintenant votre week-end prolongé pour venir à WE LOVE GREEN en train TGV Inoui et Intercités Marseille à partir de 39€, Bordeaux à partir de 35€, Lyon à partir de 29€, Nantes à partir de 29€, Lille à partir de 20€, Toulouse à partir de 50€, Strasbourg à partir de 55€, Bruxelles à partir de 37€…</dd>
-                </dl> 
-                <figure><img src="./img/accueil/map.png" alt="Carte pour venir au festival"></figure>  
-            </article>
-            <article>
-                <h3>ECO CONSIGNES</h3>
-                <br>
-                <dl>
-                    <dt>NE JETTEZ RIEN AU SOL, RESPECTEZ L’ENVIRONNEMENT</dt>
-                    <br>
-                    <dd>Ne jetez pas vos déchets, mégots, bouteilles au sol… Placez les dans les poubelles mises à votre disposition autour du site du festival.</dd>
-                    
-                    <dt>UTILISEZ LES BONS FLUX</dt>
-                    <br>
-                    <dd>Nous vous prions de jeter vos déchets dans les bons flux, expliqués sur chaque poubelles du festival. En 2022 nous avons réussi à recycler 120,5 tonnes de déchets sur le festival.</dd>
-                </dl>
-            </article> 
-            <article>
-                <h2>OBJETS INTERDIT</h2>
-                <figure><img src="./img/accueil/objets-interdit.png" alt="Listes des objets interdits"></figure>
-            </article>
-        </section>
-    </main>
-    <!--++++++++++++++++++++++++++++++++ FIN MAIN ++++++++++++++++++++++++++++++++-->
-
-    <!--++++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++-->
-    <footer>
-        <section class="footer__gauche">
-            <figure class="logo">
-                <img src="./img/logo_welovegreen.png" alt="Logo du festival" />
+        <title>WE LOVE GREEN - Acceuil</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a id="festival"
+                            >FESTIVAL <i class="fa-solid fa-angle-down"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="./html/billeterie.html">BILLETERIE</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">
+                            <figure>
+                                <img
+                                    src="./img/logo_welovegreen_new.png"
+                                    alt="Image du logo" />
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./html/programmation.html">PROGRAMMATION</a>
+                    </li>
+                    <li>
+                        <a href="./html/galerie.html">AFFICHE</a>
+                    </li>
+                </ul>
+            </nav>
+            <figure class="video_header">
+                <video autoplay muted loop>
+                    <source src="./img/accueil/video.mp4" type="video/mp4" />
+                </video>
             </figure>
-            <article>
-                <p> We Love Green est un festival français de musique électro-pop</p>
-                <p> organisé à Paris depuis 2010, se déroulant à l’approche de l’été.</p>
-                <p> We Love Green allie événement artistique et respect de l'environnement.</p>
-            </article>
-            <article class="reseaux-sociaux">
-                <figure>
-                    <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-                    <figcaption>Facebook</figcaption>
-                </figure>
-                <figure>
-                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <figcaption>Instagram</figcaption>
-                </figure>
-                <figure>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
-                    <figcaption>X/Twitter</figcaption>
-                </figure>
-                <figure>
-                    <a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                    <figcaption>Youtube</figcaption>
-                </figure>
-                <figure>
-                    <a href="#"><i class="fa-brands fa-tiktok fa-xl"></i></a>
-                    <figcaption>TikTok</figcaption>
-                </figure>
-            </article>
-        </section>
 
-        <section class="footer__droit">
-            <article>
-                <h3>NEWSLETTER</h3>
-                <input type="email" name="newsletter" placeholder="Mail" />
-                <button type="submit" class="boutton_noir-contour-vert"> S'ABONNER
+            <a href="./html/billeterie.html" class="cta">
+                <button class="boutton_noir-contour-vert">
+                    PRENDS TON PASS
                 </button>
-            </article>
-            <article>
-                <a href="#">FA</a>
-                <a href="#">Contact</a>
-                <a href="#">Mentions légale</a>
-                <a href="#">Politiques de confidentialit</a>
-                <a href="#">Données personnels et cookie</a>
-            </article>
-        </section>
+            </a>
+            <i class="fa-solid fa-angles-down fa-xl"></i>
+        </header>
 
-        <section class="credit">
-            <article>
-                <figure>
-                    <i class="fa-regular fa-credit-card fa-2xl"></i>
-                </figure>
-                <figure><i class="fa-brands fa-cc-visa fa-2xl"></i></figure>
-                <figure>
-                    <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
-                </figure>
-                <figure>
-                    <i class="fa-brands fa-cc-apple-pay fa-2xl"></i>
-                </figure>
-                <figure>
-                    <i class="fa-brands fa-cc-paypal fa-2xl"></i>
-                </figure>
-                <!-- <figure></figure> -->
-            </article>
-            <article>
-                <p>Tous droits réservés © WE LOVE GREEN 2024 concept</p>
-                <p>Design et Dev</p>
-                <p>EHUI Michel-Ange & MANUEL Mélissa</p>
-            </article>
-            <article>
-                <figure>
-                    <a href="https://github.com/Mickey78-225/WE-LOVE-GREEN.git" target="_blank">
-                        <i class="fa-solid fa-code"></i>
-                        <figcaption>Github projet</figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="https://www.figma.com/proto/v675xdsCaajBcOyzdd4ZUd/Projet-festival?node-id=20%3A2&t=wW1oePZRwZoVQNwQ-1" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                        <figcaption>Figma projet</figcaption>
-                    </a>
-                </figure>
-            </article>
-        </section>
-    </footer>
-    <!--++++++++++++++++++++++++++++++++ FIN FOOTER ++++++++++++++++++++++++++++++++-->
+        <!--++++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++++-->
+        <main>
+            <section class="artiste">
+                <article>
+                    <div class="de_gauche_a_droite">
+                        <p>SZA</p>
+                        <p>BURNA BOY</p>
+                        <p>JUSTICE</p>
+                        <p>PEGGY GOU</p>
+                        <p>KAYTRANADA</p>
+                        <p>SZA</p>
+                        <p>BURNA BOY</p>
+                        <p>JUSTICE</p>
+                        <p>PEGGY GOU</p>
+                        <p>KAYTRANADA</p>
+                        <p>SZA</p>
+                        <p>BURNA BOY</p>
+                        <p>JUSTICE</p>
+                        <p>PEGGY GOU</p>
+                        <p>KAYTRANADA</p>
+                        <p>SZA</p>
+                        <p>BURNA BOY</p>
+                        <p>JUSTICE</p>
+                        <p>PEGGY GOU</p>
+                        <p>KAYTRANADA</p>
+                    </div>
+                    <div class="de_droite_a_gauche">
+                        <p>FOUR TET</p>
+                        <p>SHAY</p>
+                        <p>CHASE & STATUS DJ</p>
+                        <p>JOSMAN</p>
+                        <p>KIM GORDON</p>
+                        <p>FOUR TET</p>
+                        <p>SHAY</p>
+                        <p>CHASE & STATUS DJ</p>
+                        <p>JOSMAN</p>
+                        <p>KIM GORDON</p>
+                        <p>FOUR TET</p>
+                        <p>SHAY</p>
+                        <p>CHASE & STATUS DJ</p>
+                        <p>JOSMAN</p>
+                        <p>KIM GORDON</p>
+                        <p>FOUR TET</p>
+                        <p>SHAY</p>
+                        <p>CHASE & STATUS DJ</p>
+                        <p>JOSMAN</p>
+                        <p>KIM GORDON</p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img
+                            src="./img/accueil/burna.png"
+                            alt="Photo de l'artiste Burna Boy avec un fond " />
+                    </figure>
+                    <figure>
+                        <img
+                            class="scale"
+                            src="./img/accueil/justice.jpg"
+                            alt="Photo du duo Justice" />
+                    </figure>
+                    <h2>
+                        <a href="./html/programmation.html">ET BIEN D'AUTRES</a>
+                    </h2>
+                </article>
+            </section>
 
-    <script src="./js/script.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-</body>
+            <section class="presentation">
+                <article>
+                    <p>
+                        Cette année, <b>WE LOVE GREEN</b> ne déroge pas à la
+                        règle, accueille stars confirmées, espoirs
+                    </p>
+                    <p>
+                        prometteurs et talents de demain. Avec un line-up
+                        excitant sexy, dansant, groovy et électrique.
+                    </p>
+                    <p>Mais pas que !</p>
+                    <p>
+                        Retrouvez la scène <b>Think Tank</b> avec des
+                        discussions entre personnalités engagées qui seront
+                    </p>
+                    <p>
+                        présent pour vous offrir deux jours de bouillonnement
+                        d’idées pour préserver notre planète ,
+                    </p>
+                    <p>
+                        le <b>Village des Innovations</b> et bien d’autres
+                        activité pendant votre festival.
+                    </p>
+                    <button class="boutton_blanc-contour-noir">
+                        EN SAVOIR PLUS
+                    </button>
+                </article>
+
+                <article>
+                    <section
+                        class="splide"
+                        aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <figure>
+                                        <img
+                                            src="./img/accueil/carrousel.jpg"
+                                            alt="" />
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure>
+                                        <img
+                                            src="./img/accueil/carrousel2.jpg"
+                                            alt="" />
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure>
+                                        <img
+                                            src="./img/accueil/carrousel3.jpg"
+                                            alt="" />
+                                    </figure>
+                                </li>
+                                <li class="splide__slide">
+                                    <figure>
+                                        <a href="./html/galerie.html"
+                                            >VOIR GALERIE</a
+                                        >
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+            <section class="infos_pratiques">
+                <h2>INFOS PRATIQUES</h2>
+                <article class="lieu">
+                    <div>
+                        <h3>LIEU & HORAIRES</h3>
+                        <br />
+                        <p>LIEU : LE BOIS DE VINCENNES</p>
+                        <br />
+                        <p>Plaine de la Belle Etoile</p>
+                        <p>Accès par la Route Dauphiné via</p>
+                        <p>L’Esplanade Saint Louis</p>
+                        <p>Bois de Vincennes, 75012 Paris</p>
+                        <br />
+                        <p>HORAIRES : 31 MAI, 1er & 2 JUIN 2024</p>
+                        <br />
+                        <p>Vendredi : 17h30 – 01h00</p>
+                        <p>Samedi : 14h00 – 01h00</p>
+                        <p>Dimanche : 14h00 – 00h00</p>
+                    </div>
+                    <figure>
+                        <img
+                            src="./img/accueil/scene.jpeg"
+                            alt="Photo de la scène de We love Green" />
+                    </figure>
+                </article>
+
+                <article class="deplacement">
+                    <h3>VENIR AU FESTIVAL</h3>
+                    <br />
+                    <dl>
+                        <dt>EN TRANSPORT EN COMMUN</dt>
+                        <br />
+                        <dd>Métro : Ligne 1 – Château de Vincennes</dd>
+                        <p>
+                            Les horaires des derniers métro au départ de Château
+                            de Vincennes ci-dessous :
+                            <br />
+                            Vendredi 31 Mai : 1h39 Samedi 1er Juin : 1h39
+                            Dimanche 2 Juin : 00h39
+                        </p>
+                        <br />
+                        <dd>RER : A – Château de Vincennes</dd>
+                        <dd>
+                            Bus : Ligne 56 (Barbès, Gare de l’Est, République,
+                            Oberkampf, Nation, Château de Vincennes)
+                        </dd>
+                        <dd>Noctilien : Ligne N11 et N33</dd>
+
+                        <br />
+                        <dt>EN TRAIN</dt>
+                        <dd>
+                            Ne partez pas à la dernière minute et réservez dès
+                            maintenant votre week-end prolongé pour venir à WE
+                            LOVE GREEN. <br />
+                            En train TGV Inoui et Intercités Marseille à partir
+                            de 39€, Bordeaux à partir de 35€, Lyon à partir
+                            de 29€, <br />
+                            Nantes à partir de 29€, Lille à partir
+                            de 20€, Toulouse à partir de 50€, Strasbourg à
+                            partir de 55€, Bruxelles à partir de 37€…
+                        </dd>
+                    </dl>
+                    <figure>
+                        <img
+                            src="./img/accueil/map.png"
+                            alt="Carte pour venir au festival" />
+                    </figure>
+                </article>
+
+                <article class="consigne">
+                    <div>
+                        <h3>ECO CONSIGNES</h3>
+                    <br />
+                    <p>
+                        NE JETTEZ RIEN AU SOL, RESPECTEZ L’ENVIRONNEMENT
+                        <br />
+                        Ne jetez pas vos déchets, mégots, bouteilles au sol…
+                        Placez les dans les poubelles mises à votre disposition
+                        autour du site du festival.
+                        <br /><br />
+                        UTILISEZ LES BONS FLUX
+                        <br />
+                        Nous vous prions de jeter vos déchets dans les bons
+                        flux, expliqués sur chaque poubelles du festival. <br />
+                        En 2022 nous avons réussi à recycler 120,5 tonnes de
+                        déchets sur le festival.
+                    </p>
+                    </div>
+                    
+                
+                    <h2>OBJETS INTERDIT</h2>
+                    <figure>
+                        <img
+                            src="./img/accueil/objets-interdit.png"
+                            alt="Listes des objets interdits" />
+                    </figure>
+                </article>
+            </section>
+        </main>
+        <!--++++++++++++++++++++++++++++++++ FIN MAIN ++++++++++++++++++++++++++++++++-->
+
+        <!--++++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++++-->
+        <footer>
+            <section class="footer__gauche">
+                <figure class="logo">
+                    <img
+                        src="./img/logo_welovegreen.png"
+                        alt="Logo du festival" />
+                </figure>
+                <article>
+                    <p>
+                        We Love Green est un festival français de musique
+                        électro-pop
+                    </p>
+                    <p>
+                        organisé à Paris depuis 2010, se déroulant à l’approche
+                        de l’été.
+                    </p>
+                    <p>
+                        We Love Green allie événement artistique et respect de
+                        l'environnement.
+                    </p>
+                </article>
+                <article class="reseaux-sociaux">
+                    <figure>
+                        <a href="#"
+                            ><i class="fa-brands fa-facebook-f fa-xl"></i
+                        ></a>
+                        <figcaption>Facebook</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"
+                            ><i class="fa-brands fa-instagram fa-xl"></i
+                        ></a>
+                        <figcaption>Instagram</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"
+                            ><i class="fa-brands fa-x-twitter fa-xl"></i
+                        ></a>
+                        <figcaption>X/Twitter</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"
+                            ><i class="fa-brands fa-youtube fa-xl"></i
+                        ></a>
+                        <figcaption>Youtube</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"
+                            ><i class="fa-brands fa-tiktok fa-xl"></i
+                        ></a>
+                        <figcaption>TikTok</figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="footer__droit">
+                <article>
+                    <h3>NEWSLETTER</h3>
+                    <input type="email" name="newsletter" placeholder="Mail" />
+                    <button type="submit" class="boutton_noir-contour-vert">
+                        S'ABONNER
+                    </button>
+                </article>
+                <article>
+                    <a href="#">FA</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Mentions légale</a>
+                    <a href="#">Politiques de confidentialit</a>
+                    <a href="#">Données personnels et cookie</a>
+                </article>
+            </section>
+
+            <section class="credit">
+                <article>
+                    <figure>
+                        <i class="fa-regular fa-credit-card fa-2xl"></i>
+                    </figure>
+                    <figure><i class="fa-brands fa-cc-visa fa-2xl"></i></figure>
+                    <figure>
+                        <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-brands fa-cc-apple-pay fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-brands fa-cc-paypal fa-2xl"></i>
+                    </figure>
+                    <!-- <figure></figure> -->
+                </article>
+                <article>
+                    <p>Tous droits réservés © WE LOVE GREEN 2024 concept</p>
+                    <p>Design et Dev</p>
+                    <p>EHUI Michel-Ange & MANUEL Mélissa</p>
+                </article>
+                <article>
+                    <figure>
+                        <a
+                            href="https://github.com/Mickey78-225/WE-LOVE-GREEN.git"
+                            target="_blank">
+                            <i class="fa-solid fa-code"></i>
+                            <figcaption>Github projet</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a
+                            href="https://www.figma.com/proto/v675xdsCaajBcOyzdd4ZUd/Projet-festival?node-id=20%3A2&t=wW1oePZRwZoVQNwQ-1"
+                            target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <figcaption>Figma projet</figcaption>
+                        </a>
+                    </figure>
+                </article>
+            </section>
+        </footer>
+        <!--++++++++++++++++++++++++++++++++ FIN FOOTER ++++++++++++++++++++++++++++++++-->
+
+        <script src="./js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    </body>
 </html>
